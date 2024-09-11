@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("image/retina.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 3% 5%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav h3{
+    color: rgb(1, 18, 47);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+.nav-menu{
+    flex:1;
+    text-align: right;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 12px;
+    position: relative;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color:rgb(76, 76, 79);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav-menu ul li::after{
+    content:'';
+    width: 0px;
+    height: 5px;
+    background: black;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom:-5px;
+    transition: .5s;
+
+}
+.nav-menu ul li:hover::after{
+    width: 100%;
+}
+.profile-image{
+    width: 50%;
+    position: absolute;
+    top: 40.7%;
+    left: 38%;
+    transform: translate(25%, -25%);
+
+}
+.title-dis{
+    width: 90%;
+    color:black;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.title-dis h1{
+    font-size: 50px;
+}
+.title-dis p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: black;
+}
+.title-dis a{
+    display: inline-block;
+    text-decoration: none;
+    color:#ffffff;
+    border: 2px solid rgb(4, 0, 0);
+    background: black;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 30px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+.title-dis a:hover{
+    background:rgba(255, 0, 0, 0.991);
+    border: 2px solid black;
+    transition: 1s;
+}
+nav span{
+    display: none;
+}
+
+
+
+
+
+@media(max-width: 700px){
+    .title-dis{
+        width: 90%;
+        color:black;
+        position: absolute;
+        top:  55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    
+    .title-dis h1{
+        font-size: 30px;
+  
+    }
+    nav span{
+        display: block;
+        color:rgb(28, 28, 28);
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+    .nav-menu{
+       position: absolute;
+       background: rgba(0,0,0,0.2);
+       height:100vh;
+       width:300px;
+       top: 0;
+       right: -300px;
+       text-align: left;
+       z-index:1 ;
+       transition: 1s;
+    }
+    .nav-menu ul li{
+      display: block;
+      margin: 10px 0;
+    }
+    .nav-menu ul{
+      padding: 20px;
+    }
+    .profile-image{
+      width: 80%;
+      position: absolute;
+      top: 66.5%;
+      left: 1%;
+      transform: (-50%, -28%);
+    }
+}
+
+
+
+/*-------About ME Section------*/
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.about-me{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.about-me h1{
+    text-decoration: underline;
+}
+
+.about-me-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.about-me-col img{
+    width:100%;
+    border-radius: 80%;
+    margin-top: 40px;
+}
+
+.about-me-col h2{
+    margin-top: 40px;
+    margin-bottom: 14px;
+    text-align: left;
+
+}
+
+.about-me-col p{
+    color:#777;
+    font-size: 20px;
+    font-weight: 300px;
+    line-height: 40px;
+    padding: 12px;
+    text-align: left;
+
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+
+    }
+}
+
+
+/*-------MY Skills Section------*/
+
+
+.skills{
+    width: 80%;
+    margin:auto;
+    padding-top: 100px;
+    background-color: #FFF3F4;
+    
+}
+
+.skills h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.skills-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+
+}
+
+.skills-col h2{
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 12px;
+    text-decoration:underline;
+
+}
+
+.skills-col p{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 12px;
+    text-align: left;
+}
+
+.skills-col li{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.skills-col .bar{
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #D4DEF2;
+
+}
+
+.skills-col .bar span{
+    height: 3px;
+    float: left;
+    background: rgb(193, 4, 4);
+
+}
+
+.ultrasound{
+    width: 98%;
+    animation: ultrasound 5s;
+
+}
+
+.colourdoppler{
+    width: 80%;
+    animation: colourdoppler 5s;
+   
+}
+
+.pregnancy{
+    width:90%;
+    animation: pregnancy 5s;
+}
+        
+.fetal{
+    width: 65%;
+    animation: fetal 5s;
+}
+@keyframes ultrasound{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 98%;
+    }
+}
+
+@keyframes colourdoppler{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes pregnancy{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes fetal {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+/*----services-----*/
+
+
+.services{
+    width: 80%;
+    margin:auto;
+    padding-top: 100px;
+    text-align: center;
+
+
+}
+
+.services h1{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.services p{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 12px;
+}
+
+.services-collam{
+    flex-basis: 30%;
+    background: #FFF3F4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+
+}
+
+.services-collam h2{
+    text-align: center;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.services-collam:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
