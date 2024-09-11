@@ -26,6 +26,7 @@ nav h3{
     color: rgb(1, 18, 47);
     font-size: 18px;
     text-transform: uppercase;
+    text-decoration: underline;
     
 }
 .nav-menu{
