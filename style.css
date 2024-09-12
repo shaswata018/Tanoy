@@ -591,10 +591,11 @@ nav span{
 /*-----footer----*/
 
 .footer{
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 30px 20px;
     background-color: rgb(57, 6, 6);
+    
 }
 
 .footer-col{
@@ -671,8 +672,26 @@ nav span{
     padding-top: 30px;
     text-align:center;
 }
+
 .e{
     padding:10px;
     
 
+}
+
+
+/*----about-page----*/
+
+.about-page{
+    background-image: url(image/retina.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+ 
+
+}
+
+.about-me-col .about-p{
+    color: black;
 }
