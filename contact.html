@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Retina Dia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <h3>Dr.Tanoy kr.paul</h3>
+            <div class="nav-menu" id="navemenus">
+                <span onclick="hideMenu()">X</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="skill.html">Skill</a></li>
+                    <li><input type="text" name="search"> <input type="submit" name="submit" value="search"></li>
+                </ul>
+            </div>
+            <span onclick="openMenu()">Menu</span>
+           
+        </nav>
+<body>
+
+<div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Send Message</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+<div class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <h1>Company</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About-Me</a></li>             
+                <li><a href="skill.html">My-Skills</a></li>
+                <li><a href="#">My-Service</a></li>
+                
+            </ul>
+
+        </div>
+
+    <div class="footer-col">
+        <h1>Get-Help</h1>
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Payment</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h1>Follow-Me</h1>
+    <div class="links">
+        
+        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"> <i class="fa-solid fa-x"></i></a>
+        <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+
+       <div class="create">
+        <h3>Create By Shaswata Paul (Pranto)</h3>
+        <p class="e">Email: Shaswata018paul@gmail.com</p>
+        <p>Mobile:+8801705741467</p>
+
+       </div>
+
+
+    </div>
+           
+</div>
+    
+     </div>
+
+
+</div>
+
+<script type="text/javascript">
+
+    var navemenus= document.getElementById('navemenus');
+    function openMenu(){
+        navemenus.style.right="0";
+    }
+    function hideMenu(){
+        navemenus.style.right="-300px";   
+    }
+</script>
+</body>
+</html>
