@@ -695,3 +695,40 @@ nav span{
 .about-me-col .about-p{
     color: black;
 }
+
+
+/*---apoinment form----*/
+
+.patient-form{
+    background-image: url("image/retina.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.img{
+    background-image: url(image/retina.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.contact-form{
+    background-image: url(image/retina.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+.img-contact{
+    background-image: url(image/retina.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
