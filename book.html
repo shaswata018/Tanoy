@@ -7,17 +7,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Patient Information Form</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+        body 
         .patient-form {
-            width: 100%;
+            width: 95%;
             max-width: 700px;
             margin: 50px auto;
-            padding: 20px;
+            padding: 1px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -33,12 +28,12 @@
         .form-group label {
             display: block;
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         .form-group input,
         .form-group select,
         .form-group textarea {
-            width: 100%;
+            width: 95%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -69,7 +64,7 @@
 <body class="img">
     <div>
         <nav>
-            <h3>Dr.Tanoy kr.paul</h3>
+            <a href="https://www.facebook.com/profile.php?id=100062507070148"><h3>Dr.Tanoy kr.paul</h3></a>
             <div class="nav-menu" id="navemenus">
                 <span onclick="hideMenu()">X</span>
                 <ul>
@@ -110,7 +105,7 @@
 
         <div class="form-group">
             <label for="contact">Contact Number</label>
-            <input type="tel" id="contact" name="contact" placeholder="Enter Contact Number" required>
+            <input type="tel" id="contact" name="contact" placeholder="+880 Enter Contact Number" required>
         </div>
 
         <div class="form-group">
@@ -143,6 +138,11 @@
         <div class="form-group">
             <label for="appointmentDate">Preferred Appointment Date</label>
             <input type="date" id="appointmentDate" name="appointmentDate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="appointmenttime">Preferred Appointment Time</label>
+            <input type="time" id="appointmentDate" name="appointmenttime" required>
         </div>
 
         <div class="form-group">

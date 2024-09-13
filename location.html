@@ -1,14 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Retina Dia</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head> 
-<body>
-    <div class="about-page">
+    <title>Retina Dia</title>
+  
+</head>
+<body class="location-img">
+
+    <div>
         <nav>
             <a href="https://www.facebook.com/profile.php?id=100062507070148"><h3>Dr.Tanoy kr.paul</h3></a>
             <div class="nav-menu" id="navemenus">
@@ -22,41 +24,22 @@
                 </ul>
             </div>
             <span onclick="openMenu()">Menu</span>
-            
+           
         </nav>
-
-
-    <div class="about-me"> 
-        <h1>About-Me</h1>
-        <div class="row">
-            <div class="about-me-col">
-                <img src="image/baba orgi.png">
-                
-                
-
-            </div>
-
-            <div class="about-me-col">
-                <h2>Hello This is Dr. Tanoy Kr. paul</h2>
-                <p class="about-p">ডা. তনয় কৃষ্ণ পাল
-                    চিকিৎসক এবং আলট্রাসাউন্ড বিশেষজ্ঞ <br>
-                    পেশাগত পরিচিতি ::<br>
-                    ডা. তনয় কৃষ্ণ পাল একজন অভিজ্ঞ চিকিৎসক, যিনি আলট্রাসাউন্ড প্রযুক্তির মাধ্যমে রোগ নির্ণয় ও চিকিৎসায় বিশেষজ্ঞ। <br>
-                    দীর্ঘ কর্মজীবন তিনি আলট্রাসাউন্ডের মাধ্যমে বিভিন্ন রোগের সঠিক ও নির্ভুল নির্ণয় করে অসংখ্য রোগীর চিকিৎসায় গুরুত্বপূর্ণ ভূমিকা পালন করেছেন। <br>
-                    রোগীদের প্রতি তাঁর সহানুভূতিশীল মনোভাব এবং উন্নত চিকিৎসা সেবার প্রতিশ্রুতি তাঁকে একজন দক্ষ ও বিশ্বস্ত চিকিৎসক হিসেবে প্রতিষ্ঠিত করেছে।<br>
-                    বিশেষজ্ঞতাআলট্রাসাউন্ড ভিত্তিক রোগ নির্ণয় <br>
-                    প্রেগনেন্সি আলট্রাসাউন্ডঅ্যাবডোমিনাল..<br>
-                    পেলভিক এবং থাইরয়েড আলট্রাসাউন্ডরিয়েল-টাইম ইমেজিং এবং ডায়াগনস্টিক রেডিওলজিউন্নত পেশাদারী স্বাস্থ্যসেবা প্রদান
-                    
-                    
-                    
-                    </p>
-
-            </div>
-        </div>
+    </div>
+    <div class="location">
+        <h1>Our-Location</h1>
+    <!-- Google Map iframe -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7360.257894898813!2d89.07296149999998!3d22.723448099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQzJzI0LjciTiA4OcKwMDQnMjIuNSJF!5e0!3m2!1sen!2sbd!4v1726256396024!5m2!1sen!2sbd"
+        width="700" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
 
     </div>
-
     <div class="footer">
         <div class="row">
             <div class="footer-col">
@@ -107,10 +90,10 @@
     
     
     </div>
-
-
-    <script type="text/javascript">
-
+    
+    
+<script type="text/javascript">
+    
         var navemenus= document.getElementById('navemenus');
         function openMenu(){
             navemenus.style.right="0";
@@ -118,7 +101,6 @@
         function hideMenu(){
             navemenus.style.right="-300px";   
         }
- </script>
+    </script>
 </body>
-
 </html>

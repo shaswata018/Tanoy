@@ -27,6 +27,8 @@ nav h3{
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: underline;
+    cursor: pointer;
+    
     
 }
 .nav-menu{
@@ -42,8 +44,8 @@ nav h3{
 }
 .nav-menu ul li a{
     text-decoration: none;
-    color:rgb(76, 76, 79);
-    font-size: 14px;
+    color:rgb(47, 47, 49);
+    font-size: 17px;
     text-transform: uppercase;
 }
 .nav-menu ul li::after{
@@ -680,6 +682,16 @@ nav span{
 }
 
 
+@media(max-width: 700px){
+    .footer-col h1{
+        padding-top: 10%;
+        margin-top: 5%;
+        
+
+
+    }
+}
+
 /*----about-page----*/
 
 .about-page{
@@ -700,8 +712,8 @@ nav span{
 /*---apoinment form----*/
 
 .patient-form{
-    background-image: url("image/retina.jpg");
-    background-position: center;
+    background-image:url(image/retina.jpg);
+    background-position: left;
     background-size: cover;
     position: relative;
     
@@ -712,8 +724,13 @@ nav span{
     background-position: center;
     background-size: cover;
     position: relative;
+   
     
 }
+
+
+/*---contact form----*/
+
 
 .contact-form{
     background-image: url(image/retina.jpg) ;
@@ -730,5 +747,45 @@ nav span{
     background-size: cover;
     position: relative;
 
+}
+
+
+/*---location----*/
+
+.location{
+   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.location{
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 10px;
+   
+}
+.location h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.location-img{
+    background-image: url(image/retina.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.location iframe{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    
 }
 
